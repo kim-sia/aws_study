@@ -11,5 +11,5 @@ Type=notify
 StandardError=syslog
 NotifyAccess=all
 
-[install]
+[Install]
 WantedBy=multi-user.target
