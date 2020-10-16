@@ -40,10 +40,18 @@ header a {
 header a:hover {
     color: #78574B;
 }
+#Introduce {
+    height: 500px;
+    background-color: #D9AE8C;
+}
 #Project {
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+#Project p {
+    margin: 10px;
+    font-size: 40px;
 }
 #Project table {
     width: 60%;
