@@ -40,11 +40,17 @@ header a {
 header a:hover {
     color: #78574B;
 }
-#Project table{
+#Project {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#Project table {
+    width: 60%;
     border: 1px solid #78574B;
     border-collapse: collapse;
 }
-#Project th, td{
+#Project th, td {
     border: 1px solid #78574B;
     padding: 5px;
 }
