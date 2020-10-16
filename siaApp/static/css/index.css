@@ -19,7 +19,7 @@ header > nav {
     height: 100%;
 }
 header ul {
-    width: 100%;
+    width: 65%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -36,4 +36,7 @@ header a {
     outline: none;
     font-family: 'Sansita Swashed', cursive;
     color: #F5F0ED;
+}
+header a:hover {
+    color: #78574B;
 }
