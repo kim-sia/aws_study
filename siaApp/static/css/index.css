@@ -8,12 +8,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #D4C6BD;
+    background-color: #4E98B8;
     position: fixed;
 }
 header > h2 {
     margin-left: 5%;
-    color: #F5F0ED;
+    color: white;
 }
 header > nav {
     width: 70%;
@@ -36,14 +36,14 @@ header a {
     text-decoration: none;
     outline: none;
     font-family: 'Sansita Swashed', cursive;
-    color: #F5F0ED;
+    color: #BDDAE6;
 }
 header a:hover {
-    color: #78574B;
+    color: #84BAC9;
 }
 #Introduce {
     height: 500px;
-    background-color: #D9AE8C;
+    background-color: #CEEAE5;
 }
 #Project {
     align-items: center;
