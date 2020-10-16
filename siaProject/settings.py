@@ -27,7 +27,8 @@ SECRET_KEY = 'hh4ag9=)mm2vaoakygx0r945v4!6xirfb3ztpc%knx35u5kxgw'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    ".ap-northeast-2.compute.amazonaws.com"
+    ".ap-northeast-2.compute.amazonaws.com",
+    "www.kimsia.shop",
 ]
 
 
