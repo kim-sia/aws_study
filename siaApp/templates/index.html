@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
     <title>김시아</title>
 </head>
 <body>
-    <h1>김시아 Kimsia</h1>
+    <div class = "container">
+        <header>
+            <h2>김시아</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Introduce</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Awards</a></li>
+                    <li><a href="">Volunteer & Competition</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 </body>
 </html>
