@@ -29,6 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     ".ap-northeast-2.compute.amazonaws.com",
     ".kimsia.shop",
+    "127.0.0.1"
 ]
 
 
