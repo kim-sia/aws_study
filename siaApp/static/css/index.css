@@ -7,7 +7,7 @@
     src: url("../fonts/210 다락방R.ttf");
 }
 body{
-    background-color: #F3EEE9;
+    background-color: #EFEAE5;
 }
 .container {
     width: 100%;
@@ -26,14 +26,14 @@ header {
 }
 header > h2 {
     margin-left: 5%;
-    color: #2D8AA9;
+    color: #3C332B;
 }
 header > nav {
     width: 70%;
     height: 100%;
 }
 header ul {
-    width: 65%;
+    width: 75%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -48,10 +48,10 @@ header ul > li {
 header a {
     text-decoration: none;
     outline: none;
-    color: #B8DEE8;
+    color: #A59A6F;
 }
 header a:hover {
-    color: #FBB9B1;
+    color: #605b48;
 }
 #Introduce {
     height: 300px;
@@ -65,7 +65,7 @@ header a:hover {
     margin: 10px;
     font-size: 35px;
     font-family: '210 다락방R'; 
-    color: #D4E5C5;
+    color: #605B48;
 }
 #Project .Project_container {
     display: flex;
@@ -79,7 +79,7 @@ header a:hover {
     justify-content: center;
     width: 350px;
     height: 100px;
-    border: 1px solid #2D8AA9;
+    border: 1px solid #605B48;
     padding: 10px;
     margin: 10px;
     text-align: center;
