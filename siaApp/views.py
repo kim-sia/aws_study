@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from .models import ProjectList
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    project_list = ProjectList.objects.all()
+    return render(request, 'index.html', {'project_list' : project_list})
