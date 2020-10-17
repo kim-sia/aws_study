@@ -3,6 +3,10 @@
     src: url("../fonts/210 국민가요R.ttf");
 }
 @font-face {
+    font-family: '210 굴림 050'; 
+    src: url("../fonts/210 굴림 050.ttf");
+}
+@font-face {
     font-family: '210 다락방R'; 
     src: url("../fonts/210 다락방R.ttf");
 }
@@ -79,8 +83,11 @@ header a:hover {
     justify-content: center;
     width: 350px;
     height: 100px;
-    border: 1px solid #605B48;
+    border: 2px solid #605B48;
+    border-radius: 15px;
     padding: 10px;
     margin: 10px;
     text-align: center;
+    line-height: normal;
+    font-family: '210 굴림 050'; 
 }
