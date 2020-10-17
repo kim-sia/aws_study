@@ -1,18 +1,10 @@
 @font-face { 
     font-family: '210 국민가요R'; 
-    src: url("../fonts/210 국민가요R.ttf");
-}
-@font-face {
-    font-family: '210 굴림 050'; 
-    src: url("../fonts/210 굴림 050.ttf");
-}
-@font-face {
-    font-family: '210 다락방R'; 
-    src: url("../fonts/210 다락방R.ttf");
+    src: url("../fonts/210 뮤지컬L.ttf");
 }
 body{
     background-color: #EFEAE5;
-    font-family: '210 굴림 050'; 
+    font-family: '210 뮤지컬L'; 
 }
 .container {
     width: 100%;
@@ -25,7 +17,7 @@ header {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    font-family: '210 국민가요R'; 
+    font-family: 'Taviraj', serif;
     /* border-bottom: 1px solid #eee;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50); */
 }
@@ -72,7 +64,7 @@ header a:hover {
 #Project p {
     margin: 10px;
     font-size: 35px;
-    font-family: '210 다락방R'; 
+    font-family: 'Taviraj', serif;
     color: #D7BAB4;
 }
 #Project .Project_container {
