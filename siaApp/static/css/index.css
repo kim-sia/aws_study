@@ -12,6 +12,7 @@
 }
 body{
     background-color: #EFEAE5;
+    font-family: '210 굴림 050'; 
 }
 .container {
     width: 100%;
@@ -92,6 +93,5 @@ header a:hover {
     margin: 10px;
     text-align: center;
     line-height: 1.5em;
-    font-family: '210 굴림 050'; 
     color: #3C332B;
 }
