@@ -24,41 +24,16 @@
     </div>
     <div id = "Introduce"></div>
     <div id = "Project">
-        <p>Project Contents List</p>
-        <table>
-            <th>Date</th>
-            <th>Group</th>
-            <th>Topic</th>
+        <p>Project List</p>
+        <div class = "Project_container">
             {% for project in project_list %}
-            <tr>
-                <td>{{project.proj_date}}</td>
-                <td>{{project.proj_group}}</td>
-                <td>{{project.proj_topic}}</td>
-            </tr>
+            <div class = "box">
+                {{project.proj_date}} <br>
+                {{project.proj_group}} <br>
+                {{project.proj_topic}}
+            </div>
             {% endfor %}
-        </table>
-
-        <p>Project Summary</p>
-        {% for project in project_list %}
-        <table>
-            <tr>
-                <td>Topic</td>
-                <td>{{project.proj_topic}}</td>
-            </tr>
-            <tr>
-                <td>Group</td>
-                <td>{{project.proj_group}}</td>
-            </tr>
-            <tr>
-                <td>overview</td>
-                <td>{{project.proj_overview}}</td>
-            </tr>
-            <tr>
-                <td>summary</td>
-                <td>{{project.proj_summary}}</td>
-            </tr>
-        </table>
-        {% endfor %}
+        </div>
     </div>
     <div id = "Awards"></div>
     <div id = "Volunteer_Competition"></div>

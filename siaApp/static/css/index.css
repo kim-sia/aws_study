@@ -1,3 +1,11 @@
+@font-face { 
+    font-family: '210 국민가요R'; 
+    src: url("../fonts/210 국민가요R.ttf");
+}
+@font-face {
+    font-family: '210 다락방R'; 
+    src: url("../fonts/210 다락방R.ttf");
+}
 body{
     background-color: #F3EEE9;
 }
@@ -12,6 +20,7 @@ header {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    font-family: '210 국민가요R'; 
     /* border-bottom: 1px solid #eee;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50); */
 }
@@ -45,7 +54,7 @@ header a:hover {
     color: #FBB9B1;
 }
 #Introduce {
-    height: 500px;
+    height: 300px;
 }
 #Project {
     align-items: center;
@@ -54,14 +63,24 @@ header a:hover {
 }
 #Project p {
     margin: 10px;
-    font-size: 40px;
+    font-size: 35px;
+    font-family: '210 다락방R'; 
+    color: #D4E5C5;
 }
-#Project table {
-    width: 60%;
-    border: 1px solid #2D8AA9;
-    border-collapse: collapse;
+#Project .Project_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 65%;
 }
-#Project th, td {
+#Project .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
     border: 1px solid #2D8AA9;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
 }
