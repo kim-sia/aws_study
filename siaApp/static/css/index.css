@@ -56,13 +56,14 @@ header a:hover {
     justify-content: center;
     align-content: center;
 }
-#Project {
+.flex {
     align-items: center;
     display: flex;
     flex-direction: column;
 }
-#Project p {
+.flex p {
     margin: 10px;
+    margin-top: 30px;
     font-size: 35px;
     font-family: 'Taviraj', serif;
     color: #D7BAB4;
@@ -85,17 +86,6 @@ header a:hover {
     text-align: center;
     line-height: 1.5em;
     color: #3C332B;
-}
-#Awards {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-#Awards p {
-    margin: 10px;
-    font-size: 35px;
-    font-family: 'Taviraj', serif;
-    color: #D7BAB4;
 }
 #Awards table {
     width: 60%;

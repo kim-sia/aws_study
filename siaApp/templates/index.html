@@ -25,7 +25,7 @@
     <div id = "Introduce">
         <a href="https://github.com/kim-sia">깃허브 바로가기</a>
     </div>
-    <div id = "Project">
+    <div id = "Project" class = "flex">
         <p>Project List</p>
         <div class = "Project_container">
             {% for project in project_list %}
@@ -37,7 +37,7 @@
             {% endfor %}
         </div>
     </div>
-    <div id = "Awards">
+    <div id = "Awards" class = "flex">
         <p>Award List</p>
         {% for award in award_list %}
         <table>
@@ -60,6 +60,8 @@
         </table>
         {% endfor %}
     </div>
-    <div id = "Volunteer_Competition"></div>
+    <div id = "Volunteer_Competition" class = "flex">
+        <p>Volunteer & Competition</p>
+    </div>
 </body>
 </html>
