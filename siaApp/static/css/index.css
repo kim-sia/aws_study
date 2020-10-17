@@ -1,10 +1,10 @@
 @font-face { 
-    font-family: '210 국민가요R'; 
-    src: url("../fonts/210 뮤지컬L.ttf");
+    font-family: '210 디딤고딕 050'; 
+    src: url("../fonts/210 디딤고딕 050.ttf");
 }
 body{
     background-color: #EFEAE5;
-    font-family: '210 뮤지컬L'; 
+    font-family: '210 디딤고딕 050'; 
 }
 .container {
     width: 100%;
@@ -80,10 +80,34 @@ header a:hover {
     width: 350px;
     height: 95px;
     background-color: #D7BAB4;
-    border-radius: 15px;
     padding: 10px;
     margin: 10px;
     text-align: center;
     line-height: 1.5em;
     color: #3C332B;
+}
+#Awards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#Awards p {
+    margin: 10px;
+    font-size: 35px;
+    font-family: 'Taviraj', serif;
+    color: #D7BAB4;
+}
+#Awards table {
+    width: 60%;
+    border: 1px solid #D7BAB4;
+    border-collapse: collapse;
+    margin: 10px;
+    color: #3C332B;
+}
+#Awards td {
+    border: 1px solid #D7BAB4;
+    padding: 10px;
+}
+#Awards td:nth-child(1){
+    text-align: center;
 }

@@ -37,7 +37,29 @@
             {% endfor %}
         </div>
     </div>
-    <div id = "Awards"></div>
+    <div id = "Awards">
+        <p>Award List</p>
+        {% for award in award_list %}
+        <table>
+            <tr>
+                <td>수상 날짜</td>
+                <td>{{award.award_date}}</td>
+            </tr>
+            <tr>
+                <td>대회 이름</td>
+                <td>{{award.award_contest}} </td>
+            </tr>
+            <tr>
+                <td>수여 기관</td>
+                <td>{{award.award_host}}</td>
+            </tr>
+            <tr>
+                <td>수상 결과</td>
+                <td>{{award.award_result}}</td>
+            </tr>
+        </table>
+        {% endfor %}
+    </div>
     <div id = "Volunteer_Competition"></div>
 </body>
 </html>
