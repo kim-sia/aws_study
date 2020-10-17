@@ -50,15 +50,18 @@ header ul > li {
     align-items: center;
 }
 header a {
-    text-decoration: none;
-    outline: none;
     color: #A59A6F;
 }
 header a:hover {
     color: #605b48;
 }
 #Introduce {
-    height: 300px;
+    padding-top: 80px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 #Project {
     align-items: center;
@@ -69,7 +72,7 @@ header a:hover {
     margin: 10px;
     font-size: 35px;
     font-family: '210 다락방R'; 
-    color: #605B48;
+    color: #D7BAB4;
 }
 #Project .Project_container {
     display: flex;
@@ -82,12 +85,13 @@ header a:hover {
     flex-direction: column;
     justify-content: center;
     width: 350px;
-    height: 100px;
-    border: 2px solid #605B48;
+    height: 95px;
+    background-color: #D7BAB4;
     border-radius: 15px;
     padding: 10px;
     margin: 10px;
     text-align: center;
-    line-height: normal;
+    line-height: 1.5em;
     font-family: '210 굴림 050'; 
+    color: #3C332B;
 }
