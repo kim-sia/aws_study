@@ -91,7 +91,7 @@ header a:hover {
 }
 .table_container table {
     width: 100%;
-    border-bottom: 1px solid #D7BAB4;
+    border-bottom: 2px solid #D7BAB4;
     border-collapse: collapse;
     margin: 10px;
     color: #3C332B;
@@ -100,7 +100,7 @@ header a:hover {
     border-bottom: 1px solid #D7BAB4;
     padding: 10px;
 }
-.table_containerd td:nth-child(1){
+.table_container td:nth-child(1){
     text-align: center;
     width: 30%;
 }
