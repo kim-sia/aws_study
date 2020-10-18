@@ -1,10 +1,11 @@
-@font-face { 
-    font-family: '210 디딤고딕 050'; 
-    src: url("../fonts/210 디딤고딕 050.ttf");
-}
 body{
     background-color: #EFEAE5;
-    font-family: '210 디딤고딕 050'; 
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.body_container{
+    width: 1320px;
 }
 .container {
     width: 100%;
@@ -17,12 +18,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    font-family: 'Taviraj', serif;
-    /* border-bottom: 1px solid #eee;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50); */
 }
-header > h2 {
+header > h3 {
     margin-left: 5%;
     color: #3C332B;
 }
@@ -31,7 +28,6 @@ header > nav {
     height: 100%;
 }
 header ul {
-    width: 75%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -45,6 +41,7 @@ header ul > li {
 }
 header a {
     color: #A59A6F;
+    font-size: 15px;
 }
 header a:hover {
     color: #605b48;
@@ -58,22 +55,20 @@ header a:hover {
     align-content: center;
 }
 .flex {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .flex p {
-    margin: 10px;
-    margin-top: 30px;
+    margin: 55px 30px 30px 30px;
     font-size: 35px;
-    font-family: 'Taviraj', serif;
     color: #D7BAB4;
 }
 #Project .Project_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 65%;
+    width: 70%;
 }
 #Project .box {
     display: flex;
@@ -88,17 +83,24 @@ header a:hover {
     line-height: 1.5em;
     color: #3C332B;
 }
-#Awards table {
-    width: 60%;
-    border: 1px solid #D7BAB4;
+.table_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 57.5%;
+}
+.table_container table {
+    width: 100%;
+    border-bottom: 1px solid #D7BAB4;
     border-collapse: collapse;
     margin: 10px;
     color: #3C332B;
 }
-#Awards td {
-    border: 1px solid #D7BAB4;
+.table_container td {
+    border-bottom: 1px solid #D7BAB4;
     padding: 10px;
 }
-#Awards td:nth-child(1){
+.table_containerd td:nth-child(1){
     text-align: center;
+    width: 30%;
 }

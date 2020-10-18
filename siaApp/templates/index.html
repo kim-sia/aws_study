@@ -6,62 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
-    <link href="https://fonts.googleapis.com/css2?family=Taviraj&display=swap" rel="stylesheet">    <title>김시아</title>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"></head>
 <body>
-    <div class = "container">
-        <header>
-            <h2>KIMSIA</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">Introduce</a></li>
-                    <li><a href="#Project">Project</a></li>
-                    <li><a href="#Awards">Awards</a></li>
-                    <li><a href="#Volunteer_Competiton">Volunteer & Competition</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <div id = "Introduce">
-        <a href="https://github.com/kim-sia">깃허브 바로가기</a>
-    </div>
-    <div id = "Project" class = "flex">
-        <p>Project List</p>
-        <div class = "Project_container">
-            {% for project in project_list %}
-            <div class = "box">
-                {{project.proj_date}} <br>
-                {{project.proj_group}} <br>
-                {{project.proj_topic}}
-            </div>
-            {% endfor %}
+    <div class = "body_container">
+        <div class = "container">
+            <header>
+                <h3>KIMSIA</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Introduce</a></li>
+                        <li><a href="#Project">Project</a></li>
+                        <li><a href="#Awards">Awards</a></li>
+                        <li><a href="#Activities">Activities</a></li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-    </div>
-    <div id = "Awards" class = "flex">
-        <p>Award List</p>
-        {% for award in award_list %}
-        <table>
-            <tr>
-                <td>수상 날짜</td>
-                <td>{{award.award_date}}</td>
-            </tr>
-            <tr>
-                <td>대회 이름</td>
-                <td>{{award.award_contest}} </td>
-            </tr>
-            <tr>
-                <td>수여 기관</td>
-                <td>{{award.award_host}}</td>
-            </tr>
-            <tr>
-                <td>수상 결과</td>
-                <td>{{award.award_result}}</td>
-            </tr>
-        </table>
-        {% endfor %}
-    </div>
-    <div id = "Volunteer_Competition" class = "flex">
-        <p>Volunteer & Competition</p>
+        <div id = "Introduce">
+            <a href="https://github.com/kim-sia">깃허브 바로가기</a>
+        </div>
+        <div id = "Project" class = "flex">
+            <p>Project</p>
+            <div class = "Project_container">
+                {% for project in project_list %}
+                <div class = "box">
+                    {{project.proj_date}} <br>
+                    {{project.proj_group}} <br>
+                    {{project.proj_topic}}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div id = "Awards" class = "flex">
+            <p>Awards</p>
+            <div class = "table_container">
+                {% for award in award_list %}
+                <table>
+                    <tr>
+                        <td>수상 날짜</td>
+                        <td>{{award.award_date}}</td>
+                    </tr>
+                    <tr>
+                        <td>대회 이름</td>
+                        <td>{{award.award_contest}} </td>
+                    </tr>
+                    <tr>
+                        <td>수여 기관</td>
+                        <td>{{award.award_host}}</td>
+                    </tr>
+                    <tr>
+                        <td>수상 결과</td>
+                        <td>{{award.award_result}}</td>
+                    </tr>
+                </table>
+                {% endfor %}
+            </div>
+        </div> 
+        <div id = "Activities" class = "flex">
+            <p>Activities</p>
+            <div class = "table_container">
+                {% for activities in activities_list %}
+                <table>
+                    <tr>
+                        <td>기관 및 단체명</td>
+                        <td>{{activities.activities_group}}</td>
+                    </tr>
+                    <tr>
+                        <td>활동 내용</td>
+                        <td>{{activities.activities_content}} </td>
+                    </tr>
+                    <tr>
+                        <td>활동 기간</td>
+                        <td>{{activities.activities_duration}}</td>
+                    </tr>
+                </table>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </body>
 </html>

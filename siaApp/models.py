@@ -13,3 +13,8 @@ class AwardList(models.Model):
     award_contest = models.TextField()
     award_host = models.TextField()
     award_result = models.TextField()
+
+class ActivitiesList(models.Model):
+    activities_group = models.TextField()
+    activities_content = models.TextField()
+    activities_duration = models.TextField()
