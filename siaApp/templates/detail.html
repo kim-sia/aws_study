@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <title>프로젝트</title>
+</head>
+<body>
+    {{ project_obj.proj_date }} <br>
+    {{project_obj.proj_group}} <br>
+    {{project_obj.proj_topic}} <br>
+    {{project_obj.proj_overview}} <br>
+    {{project_obj.proj_summary}}
+</body>
+</html>
