@@ -50,13 +50,49 @@ header a:hover {
 .body_container{
     width: 1320px;
 }
+#github {
+    display: flex;
+    justify-content: center;
+}
 #Introduce {
     padding-top: 75px;
-    height: 450px;
+    height: 400px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     align-content: center;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+}
+.profile {
+    height: 200px;
+    margin: 20px;
+}
+.title {
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px 0 15px 0;
+    background: linear-gradient(to top, #D7BAB4 50%, transparent 50%);
+    color: black;
+}
+.info img {
+    width: 100px;
+    margin: 0 20px 0 0;
+}
+.info #info {
+    display: flex;
+    flex-direction: column;
+}
+#info #name {
+    font-size: 25px;
+    margin: 5px 0 5px 0;
+}
+.education {
+    height: 200px;
+    margin: 20px;
 }
 .flex {
     display: flex;
@@ -64,7 +100,7 @@ header a:hover {
     align-items: center;
 }
 .flex p {
-    margin: 55px 30px 30px 30px;
+    margin: 90px 30px 30px 30px;
     font-size: 40px;
     color: #D7BAB4;
 }

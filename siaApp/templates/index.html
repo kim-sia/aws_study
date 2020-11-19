@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"></head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/fee8376c66.js" crossorigin="anonymous"></script>
 <body>
     <header>
         <h3>KIMSIA</h3>
@@ -22,8 +23,27 @@
     </header>
     <div class = "body_container">
         <div id = "Introduce">
-            <a href="https://github.com/kim-sia">깃허브 바로가기</a>
+            <div class = "profile">
+                <p class = "title">PROFILE</p>
+                <div class = "info">
+                    <img src="{% static 'img/kimsia.jpeg' %}" alt = "kimsia">
+                    <div id ="info">
+                        <p id = "name">김시아 / Kimsia</p>
+                        <p><i class="fas fa-birthday-cake"></i>  1997.04.03</p>
+                        <p><i class="far fa-envelope"></i>  kim4-3@naver.com</p>
+                        <p><i class="fas fa-phone-alt"></i>  010.2460.5902</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "education">
+                <p class = "title">EDUCATION</p>
+                <div class = "info">
+                    <p>16.03     전북대학교 컴퓨터공학부 입학</p>
+                </div>
+            </div>
         </div>
+        <a href="https://github.com/kim-sia" id = "github">깃허브 바로가기</a>
         <div id = "Project" class = "flex">
             <p>Project</p>
             <div class = "Project_container">
