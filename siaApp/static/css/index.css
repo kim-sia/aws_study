@@ -114,8 +114,9 @@ header a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 350px;
-    height: 105px;
+    height: 110px;
     background-color: #D7BAB4;
     border-radius: 1px;
     padding: 10px;
@@ -127,6 +128,9 @@ header a:hover {
 }
 #Project a {
     color: #3C332B;
+    width: 70px;
+    margin-top: 7.5px;
+    border: 1px solid #3C332B;
 }
 .table_container {
     display: flex;

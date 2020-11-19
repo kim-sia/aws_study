@@ -7,6 +7,7 @@ class ProjectList(models.Model):
     proj_topic = models.TextField()
     proj_overview = models.TextField()
     proj_summary = models.TextField()
+    proj_img = models.ImageField(upload_to='images/', blank = True, null = True)
 
 class AwardList(models.Model):
     award_date = models.CharField(max_length = 30)

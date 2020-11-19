@@ -15,9 +15,9 @@
         <nav>
             <ul>
                 <li><a href="#">Introduce</a></li>
-                <li><a href="#Project">Project</a></li>
-                <li><a href="#Awards">Awards</a></li>
                 <li><a href="#Activities">Activities</a></li>
+                <li><a href="#Awards">Awards</a></li>
+                <li><a href="#Project">Project</a></li>
             </ul>
         </nav>
     </header>
@@ -44,19 +44,28 @@
             </div>
         </div>
         <a href="https://github.com/kim-sia" id = "github">깃허브 바로가기</a>
-        <div id = "Project" class = "flex">
-            <p>Project</p>
-            <div class = "Project_container">
-                {% for project in project_list %}
-                <div class = "box">
-                    {{project.proj_date}} <br>
-                    {{project.proj_group}} <br>
-                    {{project.proj_topic}} <br>
-                    <a href = "{% url 'detail' project.pk %}">more</a>
-                </div>
+        <div id = "Activities" class = "flex">
+            <p>Activities</p>
+            <div class = "table_container">
+                {% for activities in activities_list %}
+                <table>
+                    <tr>
+                        <td>기관 및 단체명</td>
+                        <td>{{activities.activities_group}}</td>
+                    </tr>
+                    <tr>
+                        <td>활동 내용</td>
+                        <td>{{activities.activities_content}} </td>
+                    </tr>
+                    <tr>
+                        <td>활동 기간</td>
+                        <td>{{activities.activities_duration}}</td>
+                    </tr>
+                </table>
                 {% endfor %}
             </div>
         </div>
+
         <div id = "Awards" class = "flex">
             <p>Awards</p>
             <div class = "table_container">
@@ -82,27 +91,23 @@
                 {% endfor %}
             </div>
         </div> 
-        <div id = "Activities" class = "flex">
-            <p>Activities</p>
-            <div class = "table_container">
-                {% for activities in activities_list %}
-                <table>
-                    <tr>
-                        <td>기관 및 단체명</td>
-                        <td>{{activities.activities_group}}</td>
-                    </tr>
-                    <tr>
-                        <td>활동 내용</td>
-                        <td>{{activities.activities_content}} </td>
-                    </tr>
-                    <tr>
-                        <td>활동 기간</td>
-                        <td>{{activities.activities_duration}}</td>
-                    </tr>
-                </table>
+
+        <div id = "Project" class = "flex" style="margin-bottom: 100px;">
+            <p>Project</p>
+            <div class = "Project_container">
+                {% for project in project_list %}
+                <div class = "box">
+                    {{project.proj_date}} <br>
+                    {{project.proj_group}} <br>
+                    {{project.proj_topic}} <br>
+                    <a href = "{% url 'detail' project.pk %}">more</a>
+                </div>
                 {% endfor %}
             </div>
         </div>
+        
+        
+        
     </div>
     <script>
             var header = $('header');

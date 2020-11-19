@@ -5,13 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"></head>
+
     <title>프로젝트</title>
 </head>
 <body>
-    {{ project_obj.proj_date }} <br>
-    {{project_obj.proj_group}} <br>
-    {{project_obj.proj_topic}} <br>
-    {{project_obj.proj_overview}} <br>
-    {{project_obj.proj_summary}}
+    <header>
+        <a href="http://www.kimsia.shop/">KIMSIA</a>
+    </header>
+    <div class = "container">
+        <img src = "http://127.0.0.1:8000/media/{{project_obj.proj_img}}">
+        <div class = "table_container">
+            <table>
+                <tr>
+                    <td>프로젝트 날짜</td>
+                    <td>{{ project_obj.proj_date }}</td>
+                </tr>
+                <tr>
+                    <td>프로젝트 소속</td>
+                    <td>{{ project_obj.proj_group }}</td>
+                </tr>
+                <tr>
+                    <td>프로젝트 주제</td>
+                    <td>{{ project_obj.proj_topic }}</td>
+                </tr>
+                <tr>
+                    <td>프로젝트 개요</td>
+                    <td>{{ project_obj.proj_overview }}</td>
+                </tr>
+                <tr>
+                    <td>프로젝트 요약</td>
+                    <td>{{ project_obj.proj_summary }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
