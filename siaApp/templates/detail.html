@@ -15,9 +15,11 @@
         <a href="http://www.kimsia.shop/">KIMSIA</a>
     </header>
     <div class = "container">
-        {% if project_obj.proj_img.url != NULL %}
-            <img src = "{{project_obj.proj_img.url}}">    
-        {% endif %}
+        <div class = "image">
+            {% if project_obj.proj_img.url != NULL %}
+                <img src = "{{project_obj.proj_img.url}}">    
+            {% endif %}
+        </div>
     
         <div class = "table_container">
             <table>

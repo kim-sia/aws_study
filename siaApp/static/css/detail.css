@@ -23,16 +23,16 @@ header > a {
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 75%;
+    width: 80%;
 }
 .table_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 200px;
-    width: 70%;
+    width: 60%;
 }
 .table_container table {
     width: 100%;
@@ -49,7 +49,10 @@ header > a {
     text-align: center;
     width: 30%;
 }
+.image{
+    width: 35%;
+}
 img {
     margin-top: 200px;
-    height: 270px;
+    width: 100%;
 }
